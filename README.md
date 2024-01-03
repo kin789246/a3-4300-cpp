@@ -8,6 +8,13 @@ try to clone the assignment 3 game of COMP4300 on Youtube teached by Dave Church
 
 DEMO
 
+https://github.com/kin789246/a3-4300-cpp/assets/30062348/847eed3f-ea29-44af-be93-bef68b3948ed
+
+
+**to-do**
+- improve animations of brick debris
+- improve animation of question block
+
 ------------------------------------------------------------------------------ 
 Program Specification
 ------------------------------------------------------------------------------ 
