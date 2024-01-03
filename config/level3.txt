@@ -1,0 +1,14 @@
+Tile Ground 0 0
+Tile Ground 1 0
+Tile Ground 2 0
+Tile Ground 3 0
+Tile Ground 4 0
+Tile Ground 5 0
+Tile Ground 6 0
+Tile Ground 7 0
+Tile Ground 8 0
+Tile Ground 9 0
+Tile Ground 10 0
+Tile Ground 11 0
+Tile Ground 12 0
+Player 2 6 48 48 5 -20 20 0.75 Buster

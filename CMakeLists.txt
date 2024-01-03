@@ -41,11 +41,32 @@ include_directories(include)
 
 # copy assets to binary directory
 file(
-    COPY ${CMAKE_SOURCE_DIR}/assets/fonts/TwilioSansMNerdFont-Regular.ttf 
+    COPY ${CMAKE_SOURCE_DIR}/assets/fonts/mario.ttf 
     DESTINATION ${CMAKE_BINARY_DIR}/assets/fonts
 )
 
 file(
-    COPY ${CMAKE_SOURCE_DIR}/assets/config.txt 
-    DESTINATION ${CMAKE_BINARY_DIR}/assets
+    COPY ${CMAKE_SOURCE_DIR}/config/assets.txt 
+    DESTINATION ${CMAKE_BINARY_DIR}/config
 )
+
+file(
+    COPY ${CMAKE_SOURCE_DIR}/config/level1.txt 
+    DESTINATION ${CMAKE_BINARY_DIR}/config
+)
+
+file(
+    COPY ${CMAKE_SOURCE_DIR}/config/level2.txt 
+    DESTINATION ${CMAKE_BINARY_DIR}/config
+)
+
+file(
+    COPY ${CMAKE_SOURCE_DIR}/config/level3.txt 
+    DESTINATION ${CMAKE_BINARY_DIR}/config
+)
+
+file(GLOB mario_png ${CMAKE_SOURCE_DIR}/assets/mario/*.png)
+file(GLOB megaman_png ${CMAKE_SOURCE_DIR}/assets/megaman/*.png)
+
+file(COPY ${mario_png} DESTINATION ${CMAKE_BINARY_DIR}/assets/mario)
+file(COPY ${megaman_png} DESTINATION ${CMAKE_BINARY_DIR}/assets/megaman)

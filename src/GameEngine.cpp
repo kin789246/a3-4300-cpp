@@ -31,7 +31,9 @@ sf::RenderWindow& GameEngine::window() {
 
 void GameEngine::run() {
     while (isRunning()) {
+        sUserInput();
         update(); 
+        m_window.display();
     }
 }
 
@@ -68,6 +70,7 @@ void GameEngine::sUserInput() {
             const std::string actionType = 
                 (event.type == sf::Event::KeyPressed) ? "START" : "END";
 
+            // std::cout << actionType << std::endl;
             // look up the action and send the action to the scene
             currentScene()->doAction(
                 Action(currentScene()->getActionMap().at(event.key.code)
@@ -82,14 +85,17 @@ void GameEngine::changeScene(
     std::shared_ptr<Scene> scene,
     bool endCurrentScene
 ) {
+    m_currentScene = sceneName;
+    m_sceneMap[sceneName] = scene;
 }
 
 void GameEngine::quit() {
-
+    m_running = false;
+    m_window.close();
 }
 
 void GameEngine::update() {
-
+    currentScene()->update();
 }
 
 const Assets& GameEngine::assets() const {

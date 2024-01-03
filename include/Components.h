@@ -2,6 +2,20 @@
 
 #include "Animation.h"
 
+// set a flag: flag |= (int)PlayerState
+// unset a flag: flag &= ~(int)PlayerState
+// flipping a flag: flag ^= (int)PlayerState
+// checking if a flag set: return (flag & (int)PlayerState) == (int)PlayerState
+// checking multiple flags set: return (flag &(int)PlayerState) != 0
+enum struct PlayerState {
+    STAND = 1 << 0,
+    STANDSHOOT = 1 << 1,
+    AIR = 1 << 2,
+    AIRSHOOT = 1 << 3,
+    RUN = 1 << 4,
+    RUNSHOOT = 1 << 5
+};
+
 class Component
 {
     public:
@@ -54,7 +68,7 @@ class CBoundingBox : public Component
         Vec2 halfSize;
         CBoundingBox() {}
         CBoundingBox(const Vec2& s) 
-            : size(s), halfSize(s.x / 2, s.y / 2) {}
+            : size(s), halfSize(s.x / 2.0, s.y / 2.0) {}
 };
 
 class CAnimation : public Component
@@ -78,7 +92,9 @@ class CGravity : public Component
 class CState : public Component
 {
     public:
-    std::string state = "jumping";
+    PlayerState state;
+    PlayerState preState; 
+    bool changeAnimate = false;
     CState() {}
-    CState(const std::string& s) : state(s) {}
+    CState(const PlayerState s) : state(s), preState(s) {}
 }; 

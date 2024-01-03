@@ -1,0 +1,91 @@
+Texture TexBlock assets/mario/mario_block.png
+Texture TexBrickDebrisSmall assets/mario/mario_brick_debris_small.png
+Texture TexBrickDebris assets/mario/mario_brick_debris.png
+Texture TexBrick assets/mario/mario_brick.png
+Texture TexBush1 assets/mario/mario_bush1.png
+Texture TexBush2 assets/mario/mario_bush2.png
+Texture TexBush3 assets/mario/mario_bush3.png
+Texture TexCloud1 assets/mario/mario_cloud1.png
+Texture TexCloud2 assets/mario/mario_cloud2.png
+Texture TexCloud3 assets/mario/mario_cloud3.png
+Texture TexCloud4 assets/mario/mario_cloud4.png
+Texture TexCloud5 assets/mario/mario_cloud5.png
+Texture TexCloud6 assets/mario/mario_cloud6.png
+Texture TexCoinPulse assets/mario/mario_coinpulse.png
+Texture TexCoinSpin assets/mario/mario_coinspin.png
+Texture TexFlag assets/mario/mario_flag.png
+Texture TexFlagPole assets/mario/mario_flagpole.png
+Texture TexFlagTop assets/mario/mario_flagtop.png
+Texture TexGoombaWalk assets/mario/mario_goombawalk.png
+Texture TexGround assets/mario/mario_ground.png
+Texture TexMountain1 assets/mario/mario_mountain1.png
+Texture TexMountain2 assets/mario/mario_mountain2.png
+Texture TexMountain3 assets/mario/mario_mountain3.png
+Texture TexMountain4 assets/mario/mario_mountain4.png
+Texture TexMountain5 assets/mario/mario_mountain5.png
+Texture TexMountain6 assets/mario/mario_mountain6.png
+Texture TexPipeConnect1 assets/mario/mario_pipe_connect1.png
+Texture TexPipeConnect2 assets/mario/mario_pipe_connect2.png
+Texture TexPipeHori1 assets/mario/mario_pipe_hori1.png
+Texture TexPipeHori2 assets/mario/mario_pipe_hori2.png
+Texture TexPipeHori3 assets/mario/mario_pipe_hori3.png
+Texture TexPipeHori4 assets/mario/mario_pipe_hori4.png
+Texture TexPipe1 assets/mario/mario_pipe1.png
+Texture TexPipe2 assets/mario/mario_pipe2.png
+Texture TexPipe3 assets/mario/mario_pipe3.png
+Texture TexPipe4 assets/mario/mario_pipe4.png
+Texture TexQuestionHit assets/mario/mario_question_hit.png
+Texture TexQuestion assets/mario/mario_question.png
+Texture TexAirShoot assets/megaman/megaman_air_shoot.png
+Texture TexAir assets/megaman/megaman_air.png
+Texture TexBuster assets/megaman/megaman_buster.png
+Texture TexRunShoot assets/megaman/megaman_run_shoot.png
+Texture TexRun assets/megaman/megaman_run.png
+Texture TexStand assets/megaman/megaman_stand.png
+Texture TexStandShoot assets/megaman/megaman_stand_shoot.png
+Animation StandShoot TexStandShoot 1 0
+Animation Stand TexStand 2 30
+Animation Run TexRun 3 9
+Animation RunShoot TexRunShoot 3 9
+Animation Air TexAir 1 0
+Animation AirShoot TexAirShoot 1 0
+Animation Buster TexBuster 1 0
+Animation Block TexBlock 1 0
+Animation BrickDebrisSmall TexBrickDebrisSmall 1 0
+Animation BrickDebris TexBrickDebris 1 0
+Animation Brick TexBrick 1 0
+Animation Bush1 TexBush1 1 0
+Animation Bush2 TexBush2 1 0
+Animation Bush3 TexBush3 1 0
+Animation Cloud1 TexCloud1 1 0
+Animation Cloud2 TexCloud2 1 0
+Animation Cloud3 TexCloud3 1 0
+Animation Cloud4 TexCloud4 1 0
+Animation Cloud5 TexCloud5 1 0
+Animation Cloud6 TexCloud6 1 0
+Animation CoinPulse TexCoinPulse 3 10
+Animation CoinSpin TexCoinSpin 4 9
+Animation Flag TexFlag 1 0
+Animation FlagPole TexFlagPole 1 0
+Animation FlagTop TexFlagTop 1 0
+Animation GoombaWalk TexGoombaWalk 2 20
+Animation Ground TexGround 1 0
+Animation Mountain1 TexMountain1 1 0
+Animation Mountain2 TexMountain2 1 0
+Animation Mountain3 TexMountain3 1 0
+Animation Mountain4 TexMountain4 1 0
+Animation Mountain5 TexMountain5 1 0
+Animation Mountain6 TexMountain6 1 0
+Animation PipeConnect1 TexPipeConnect1 1 0
+Animation PipeConnect2 TexPipeConnect2 1 0
+Animation PipeHori1 TexPipeHori1 1 0
+Animation PipeHori2 TexPipeHori2 1 0
+Animation PipeHori3 TexPipeHori3 1 0
+Animation PipeHori4 TexPipeHori4 1 0
+Animation Pipe1 TexPipe1 1 0
+Animation Pipe2 TexPipe2 1 0
+Animation Pipe3 TexPipe3 1 0
+Animation Pipe4 TexPipe4 1 0
+Animation QuestionHit TexQuestionHit 1 0
+Animation Question TexQuestion 3 20
+Font Mario assets/fonts/mario.ttf

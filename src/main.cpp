@@ -2,6 +2,6 @@
 #include "GameEngine.h"
 
 int main() {
-    GameEngine g("assets/config.txt");
+    GameEngine g("config/assets.txt");
     g.run();
 }

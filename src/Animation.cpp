@@ -1,5 +1,6 @@
 #include "Animation.h"
 #include <cmath>
+#include <iostream>
 
 Animation::Animation() {};
 
@@ -22,7 +23,10 @@ Animation::Animation(
     m_sprite.setOrigin(m_size.x / 2.0f, m_size.y / 2.0f);
     m_sprite.setTextureRect(
         sf::IntRect(
-            std::floor(m_currentFrame) * m_size.x, 0, m_size.x, m_size.y
+            std::floor(m_currentFrame) * m_size.x,
+            0, 
+            m_size.x,
+            m_size.y
         )
     );
 }
@@ -32,10 +36,19 @@ Animation::Animation(
 void Animation::update() {
     // add the speed variable to the current frame
     m_currentFrame++;
-
+    // if (m_name == "Run") std::cout << "current frame=" << m_currentFrame << std::endl;
     // todo: 1) calculate the correct frame of animation to play based on 
     //          current frame and speed
     //       2) set the texture rectangle properly (see constructor for sample)
+    size_t animFrame = (m_currentFrame / m_speed) % m_frameCount;
+    m_sprite.setTextureRect(
+        sf::IntRect(
+            animFrame * m_size.x,
+            0,
+            m_size.x,
+            m_size.y
+        )
+    );
 }
 
 const Vec2& Animation::getSize() const {
@@ -53,6 +66,5 @@ sf::Sprite& Animation::getSprite() {
 bool Animation::hasEnded() const {
     // todo: detect when animation has ended (last frame was played)
     // and return true
-
-    return false;
+    return (m_currentFrame / m_speed) % m_frameCount == m_frameCount - 1;
 }
